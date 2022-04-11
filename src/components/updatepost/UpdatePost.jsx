@@ -4,11 +4,11 @@ import { useLocation, useNavigate, useParams } from "react-router-dom";
 import { updatePost } from "../../redux/action/post.action";
 
 const UpdatePost = () => {
+  const location = useLocation();
   const [title, setTitle] = useState(location.state.title);
   const [description, setDescription] = useState(location.state.description);
 
   const navigate = useNavigate();
-  const location = useLocation();
   const dispatch = useDispatch();
   const { id } = useParams();
 
