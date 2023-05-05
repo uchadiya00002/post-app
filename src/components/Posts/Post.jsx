@@ -56,8 +56,9 @@ const Post = ({ id, title, description }) => {
           onChange={(e) => setComment(e.target.value)}
         />
         <button
-          className="bg-blue-500 px-4 py-2 text-white"
+          className={`bg-blue-500  ${comment === '' ? "bg-gray-400 cursor-not-allowed" :"bg-blue-500 cursor-pointer"} px-4 py-2 text-white`}
           onClick={handleCommentSubmit}
+          disabled={comment == ""}
         >
           Add Comment
         </button>
