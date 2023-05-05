@@ -37,8 +37,9 @@ const AddPost = () => {
           onChange={(e) => setDescription(e.target.value)}
         />
         <button
-          className="bg-blue-500 px-4 py-2 text-white"
+          className={` ${title === '' || description === '' ? "bg-gray-400 cursor-not-allowed" :"bg-blue-500 cursor-pointer"}  px-4 py-2 text-white`}
           onClick={(e) => handleSubmit(e)}
+          disabled={title === '' || description === ''}
         >
           Create Post
         </button>

@@ -7,7 +7,7 @@ import UpdateComment from "./routes/UpdateComment";
 
 function App() {
   return (
-    <div className="container px-3 mx-auto bg-gray-900 min-h-screen">
+    <div className=" bg-gray-900 min-h-screen">
       <Header />
       <Routes>
         <Route exact path="/" element={<HomePage />} />

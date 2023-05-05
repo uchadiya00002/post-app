@@ -5,7 +5,7 @@ const HomePage = () => {
   const { posts } = useSelector((state) => state.postReducer);
 
   return (
-    <div className="container px-3 mx-auto ">
+    <div className="container w-full px-3 mx-auto ">
       <AddPost />
       <div className="flex flex-wrap justify-center ">
         {posts.map((post) => {
